@@ -22,7 +22,7 @@ class Login extends Component
             'password' => $this->password,
         ], request()->has('remember'));
         if ($success) {
-            return redirect('/');
+            return redirect('/dashboard');
         }
         redirect()->back();
     }
